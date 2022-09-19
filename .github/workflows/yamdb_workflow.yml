@@ -22,8 +22,6 @@ jobs:
         # установка зависимостей
         cd api_yamdb/
         pip install -r requirements.txt
-        python manage.py makemigrations
-        python manage.py migrate
         
 
     - name: Test with flake8 and django tests
@@ -56,7 +54,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: kegami1/infra2:latest
+          tags: kegami1/yamdb_final:latest
 
   deploy:
     runs-on: ubuntu-latest

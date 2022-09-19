@@ -22,6 +22,8 @@ jobs:
         # установка зависимостей
         cd api_yamdb/
         pip install -r requirements.txt
+        python manage.py makemigrations
+        python manage.py migrate
         
 
     - name: Test with flake8 and django tests

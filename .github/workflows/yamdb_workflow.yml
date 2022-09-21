@@ -54,7 +54,7 @@ jobs:
         with:
           push: true
           tags: kegami1/yamdb_final:latest
-          context: ./api_yamdb
+          context: .
           file: ./api_yamdb/Dockerfile
 
   deploy:

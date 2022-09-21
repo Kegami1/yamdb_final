@@ -33,12 +33,7 @@ jobs:
         # запустить написанные разработчиком тесты
         cd api_yamdb/
         python manage.py test
-    - name: migr
-      run: |
-        cd infra/
-        docker-compose exec web python manage.py migrate
-        docker-compose exec web python manage.py createsuperuser
-        docker-compose exec web python manage.py collectstatic --no-input
+
   
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub

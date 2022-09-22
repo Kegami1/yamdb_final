@@ -12,7 +12,7 @@ services:
     image: kegami1/yamdb_final:latest
     restart: always
     volumes:
-      - static_value:/app/api_yamdb/staticfiles/
+      - static_value:/app/staticfiles/
       - media_value:/app/media/
     depends_on:
       - db

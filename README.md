@@ -25,12 +25,12 @@ DB_PORT=5432
 ### Запуск
 Клонируйте проект
 ```
-git@github.com:Kegami1/infra_sp2.git
+git@github.com:Kegami1/yamdb_final.git
 ```
 
 Соберите образ из корневой дирректории
 ```
-docker build -t yamdb ./api_yamdb/
+docker build -t yamdb_final ./api_yamdb/
 ```
 
 Перейдите в папку с файлом docker-compose и запустите проект

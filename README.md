@@ -46,6 +46,10 @@ docker-compose up -d --build
 docker-compose exec web python manage.py migrate
 ```
 
+Перейти по ссылке с документаций к проекту
+```
+http://yamdb-final.ddns.net/redoc/
+```
 
 ### Автор
 
